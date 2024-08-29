@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    background: #D4414F;
+    padding: 10px 0;
+}
+
+.marquee-content {
+    display: flex;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee-item {
+    flex-shrink: 0;
+    padding: 0 4px;
+    white-space: nowrap;
+    color: #D3F355;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(27, 67, 47, 0.4);
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.hero-title {
+    position: absolute;
+    z-index: 1;
+    font-family: 'New Amsterdam', sans-serif;
+    font-size: 200px;
+    font-weight: 700;
+    transform: scaleY(1.8);
+    -webkit-text-stroke: 1px #D3F355;
+    letter-spacing: 4px;
+    color: transparent;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.hero-subtitle {
+    position: absolute;
+    top: 70%;
+    z-index: 1;
+    font-family: 'Mynerve', cursive;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content {
+    background-color: #EEE8CC;
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.large-subheader {
+    font: 400 24px/1.5 'Outfit', sans-serif;
+    color: #12362D;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: 40px 10% 60px;
+}
+
+.large-subheader .highlight {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.large-subheader .highlight::before {
+    content: '';
+    position: absolute;
+    left: -0.1em;
+    right: -0.1em;
+    top: 0.1em;
+    bottom: 0.1em;
+    background-color: #D3F355;
+    z-index: -1;
+    transform: rotate(-6deg);
+}
+
+.large-subheader .squiggle {
+    text-decoration: underline;
+    text-decoration-color: #EA5F38;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 3px;
+}
+
+h1 {
+    font-family: 'New Amsterdam', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: #333333;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.past-races > h1 {
+    color: #144136;
+}
+
