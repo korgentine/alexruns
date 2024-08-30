@@ -2,10 +2,20 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Outfit', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     color: #414141;
-    line-height: 140%;
+    max-width: 100%;
+}
+
+h1 {
+    font-family: 'New Amsterdam', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: #144136;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-top: 0px;
 }
 
 .marquee {
@@ -94,11 +104,11 @@ body {
     margin-top: 20px;
 }
 
-.content {
+.alex-description {
+    display: flex;
+    justify-content: center;
     background-color: #EEE8CC;
-    padding: 20px 10%;
-    text-align: center;
-    padding-bottom: 80px;
+    padding: 40px;
 }
 
 .large-subheader {
@@ -107,7 +117,7 @@ body {
     text-align: center;
     letter-spacing: 1px;
     line-height: 1.5;
-    margin: 40px 10% 60px;
+    max-width: 960px;
 }
 
 .large-subheader .highlight {
@@ -135,13 +145,47 @@ body {
     text-decoration-thickness: 3px;
 }
 
-h1 {
-    font-family: 'New Amsterdam', sans-serif;
-    font-size: 48px;
-    font-weight: 400;
-    color: #144136;
-    text-align: center;
-    letter-spacing: 0.1em;
+.past-races {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EEE8CC;
+}
+
+.race-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #EEE8CC;
+
+}
+
+.past-race-image {
+    width: 50%;
+    height: 50%;
+}
+
+.race-stats {
+    font-size: 24px;
+    font-weight: 300;
+    color: #141D4F;
+    line-height: 1.5;
+}
+
+.past-race-description {
+    width: 50%;
+    align-items: left;
+    background-color: #EEE8CC;
+    padding-left: 60px;
+    padding-right: 40px;
+}
+
+.other-races {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EEE8CC;
+    padding: 80px;
 }
 
 .other-races-container {
@@ -149,6 +193,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
+    text-align: center;
 }
 
 .other-race-block {
@@ -162,6 +207,7 @@ h1 {
     height: 280px;
     border: 2px solid #D3F355;
     box-shadow: 5px 5px 0 #D3F355;
+    font-size: 16px;
 }
 
 .other-race-block hr {
@@ -178,23 +224,33 @@ h1 {
     margin-top: 16px;
 }
 
-.writings-container {
+.writings {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
+    z-index: 1;
     background-color: #EA5F38;
-    padding: 20px;
-    padding-top: 40px;
+    padding: 40px;
+    padding-bottom: 100px;
+    padding-left: 10%;
 }
 
+.writings  .writings-header {
+    color: #FFFFFF;
+    text-align: left;
+    width: 70%;
+}
+
+.writings .writings-header h1 {
+    color: #FFFFFF;
+    text-align: left;
+}
 
 .article-container {
+    position: relative;
+    z-index: 1;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .article-block {
@@ -204,9 +260,11 @@ h1 {
     padding-bottom: 20px;
     padding-left: 40px;
     padding-right: 40px;
-    width: 80%;
     border: 2px solid #FFFFFF;
     box-shadow: 5px 5px 0 #FFFFFF;
+    margin-top: -40px;
+    z-index: 2;
+    width: 800px;
 }
 
 .article-block h2 {
@@ -231,3 +289,60 @@ h1 {
     margin-bottom: 0px;
     line-height: 1.5;
 }
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 80vh;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -120px;
+}
+
+.quote-overlay {
+    position: absolute;
+    width: 100%;
+    height: 80%;   
+    background: rgba(0, 0, 47, 0.4);
+    z-index: 0;
+}
+
+.quote-image {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
+.quote-text {
+    width: 80%;
+    max-width: 700px;
+    position: relative;
+    margin-top: 100px;
+    font-family: 'Mynerve', cursive;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    text-align: left;
+    width: 70%;
+}
+
+.quote-alex {
+    width: 80%;
+    max-width: 700px;
+    position: relative;
+    margin-top: 20px;
+    font-family: 'Mynerve', cursive;
+    font-size: 80px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: right;
+}
+
