@@ -1,6 +1,11 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #414141;
+    line-height: 140%;
 }
 
 .marquee {
@@ -93,6 +98,7 @@ body {
     background-color: #EEE8CC;
     padding: 20px 10%;
     text-align: center;
+    padding-bottom: 80px;
 }
 
 .large-subheader {
@@ -133,12 +139,95 @@ h1 {
     font-family: 'New Amsterdam', sans-serif;
     font-size: 48px;
     font-weight: 400;
-    color: #333333;
+    color: #144136;
     text-align: center;
     letter-spacing: 0.1em;
 }
 
-.past-races > h1 {
-    color: #144136;
+.other-races-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
 }
 
+.other-race-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;  
+    padding: 16px;
+    border-radius: 100px / 100px;
+    width: 140px;
+    height: 280px;
+    border: 2px solid #D3F355;
+    box-shadow: 5px 5px 0 #D3F355;
+}
+
+.other-race-block hr {
+    width: 50%;
+    height: 3px;
+    background-color: #D3F355;
+    border: none;
+    margin-top: 8px;
+}
+
+.other-race-block img {
+    height: 120px;
+    object-fit: cover;
+    margin-top: 16px;
+}
+
+.writings-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #EA5F38;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-block {
+    background-color: #D3F355;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 80%;
+    border: 2px solid #FFFFFF;
+    box-shadow: 5px 5px 0 #FFFFFF;
+}
+
+.article-block h2 {
+    font-family: 'Outfit', sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 700;
+    color: #141D4F  ;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+}
+
+.article-block p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #141D4F;
+    letter-spacing: 0.05em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 1.5;
+}
