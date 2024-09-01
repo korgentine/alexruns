@@ -5,6 +5,8 @@ body {
     font-size: 18px;
     font-weight: 400;
     color: #414141;
+    overflow-x: hidden;
+    line-height: 1.5;
 }
 
 h1 {
@@ -429,7 +431,7 @@ h1 {
     }
 
     .hero-subtitle {
-        font-size: 16px;
+        font-size: 12px;
     }
     
 }
