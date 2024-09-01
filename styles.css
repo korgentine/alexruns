@@ -5,7 +5,6 @@ body {
     font-size: 18px;
     font-weight: 400;
     color: #414141;
-    overflow-x: hidden;
     line-height: 1.5;
 }
 
@@ -158,7 +157,6 @@ h1 {
     flex-direction: row;
     align-items: center;
     background-color: #EEE8CC;
-
 }
 
 .past-race-image {
@@ -434,4 +432,99 @@ h1 {
         font-size: 12px;
     }
     
+    .race-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #EEE8CC;
+    }
+
+    .past-race-image {
+        position: ab;
+        left: 0;
+    }
+
+    .past-race-description img{
+        width: 240px;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    
+    .green-panel {
+        background-color: #12362D;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 50%;
+        z-index: 0;
+    }
+    
+    .blue-panel {
+        background-color: #141D4F;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+        z-index: 0;
+    }
+    
+    .about-right, .about-left {
+        text-align: center;
+        padding: 60px;
+        z-index: 10;
+        justify-content: center;
+    
+        color: #FFFFFF;
+    }
+    
+    .image-about {
+        z-index: 10;
+        padding-top: 120px;
+    }
+    
+    .image-about img {
+        height: 280px;
+        border-radius: 24px;
+        border: 8px solid #D4414F;
+        margin-top: 80px;
+    }
+    
+    .connect-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        padding: 16px;
+        margin-top: 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #D4414F;
+        width: 120px;
+    }
+    
+    .article-block {
+        background-color: #D3F355;
+        border-radius: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border: 2px solid #FFFFFF;
+        box-shadow: 5px 5px 0 #FFFFFF;
+        margin-top: -40px;
+        z-index: 2;
+        width: 220px;
+    }
 }
