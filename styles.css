@@ -5,7 +5,6 @@ body {
     font-size: 18px;
     font-weight: 400;
     color: #414141;
-    max-width: 100%;
 }
 
 h1 {
@@ -185,7 +184,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     background-color: #EEE8CC;
-    padding: 80px;
+    padding: 40px;
 }
 
 .other-races-container {
@@ -225,6 +224,25 @@ h1 {
 }
 
 .about-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.about-container h1 {
+    flex: 1;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    color: #FFFFFF;
+    padding-top: 60px;
+    z-index: 20;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
 }
 
 .green-panel {
@@ -244,17 +262,6 @@ h1 {
     z-index: 0;
 }
 
-.about-container h1 {
-    flex: 1;
-    width: 100%;
-    border: 2px solid #D3F355;
-}
-
-.about-content {
-    display: flex;
-    flex-direction: row;
-}
-
 .about-right, .about-left {
     text-align: center;
     padding: 60px;
@@ -266,6 +273,7 @@ h1 {
 
 .image-about {
     z-index: 10;
+    padding-top: 120px;
 }
 
 .image-about img {
@@ -415,3 +423,13 @@ h1 {
     text-align: right;
 }
 
+@media (max-width: 640px) {
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    
+}
