@@ -436,9 +436,134 @@ h1 {
     background-color: #141D4F;
 }
 
-.race-hero 
+.race-hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #141D4F;
+    max-width: 960px;
+}
 
+.race-hero .title {
+    display: flex;
+    flex-direction: column;
+}
 
+.race-hero h2{
+    color: #D3F355
+}
+
+.map {
+    height: 320px;
+}
+
+.logo {
+    height: 80px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin: 40px;
+    max-width: 960px;
+}
+
+.stats-label {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #C1C1C1;
+    letter-spacing: 0.05em;
+    margin-bottom: 0px;
+}
+
+.stats-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #144136;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+    margin-top: 0px;
+}
+
+.stats-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    padding: 20px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+    margin-right: 120px;
+    max-width: 960px;
+}
+
+.description h2 {
+    color: #FFFFFF;
+}
+
+.zhanghattan-page hr {
+    height: 2px;
+    background-color: #D3F355;
+    border: none;
+    margin: 40px;
+}
+
+.race-photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.photo-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.photo-row img {    
+    height: 20%;
+    object-fit: cover;
+}
+
+.aid-stations {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.race-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    max-width: 960px;
+}
+
+.race-table .table-header {
+    padding-bottom: 20px;
+}
+
+.race-table p {
+    color: #FFFFFF;
+    line-height: 0px;
+}
+
+.race-table > div {
+    text-align: left;
+}
 
 
 @media (max-width: 640px) {
@@ -538,4 +663,32 @@ h1 {
         text-align: left;
         width: 100%;
     }
+
+    .race-table {
+        grid-template-columns: 1fr 1fr;
+      }
+      
+      .table-header {
+        display: none;
+      }
+      
+      .race-table > div:nth-child(4n+1)::before {
+        content: "Number: ";
+        font-weight: bold;
+      }
+      
+      .race-table > div:nth-child(4n+2)::before {
+        content: "Mile: ";
+        font-weight: bold;
+      }
+      
+      .race-table > div:nth-child(4n+3)::before {
+        content: "Loop: ";
+        font-weight: bold;
+      }
+      
+      .race-table > div:nth-child(4n)::before {
+        content: "Aid Station: ";
+        font-weight: bold;
+      }
 }
