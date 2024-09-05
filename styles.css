@@ -6,6 +6,8 @@ body {
     font-weight: 400;
     color: #414141;
     line-height: 1.5;
+
+    margin: 0 auto;
 }
 
 h1 {
@@ -154,11 +156,11 @@ h1 {
 
 .race-block {
     display: flex;
-
+    flex-direction: row;
     background-color: #EEE8CC;
     padding: 0px;
     margin: 0px;
-    border: 2px solid #000000;
+    align-items: center;
 }
 
 .past-race-image {
@@ -177,8 +179,9 @@ h1 {
     width: 50%;
     align-items: left;
     background-color: #EEE8CC;
-    padding-left: 60px;
+    padding-left: 80px;
     padding-right: 40px;
+    max-width: 600px;
 }
 
 .other-races {
@@ -225,13 +228,13 @@ h1 {
     margin-top: 16px;
 }
 
-.about-container {
+#about {
     display: flex;
     flex-direction: row;
     position: relative;
 }
 
-.about-container h1 {
+#about h1 {
     flex: 1;
     width: 100%;
     position: absolute;
@@ -309,7 +312,7 @@ h1 {
     align-items: center;
 }
 
-.writings {
+#writings {
     position: relative;
     z-index: 1;
     background-color: #EA5F38;
@@ -320,13 +323,13 @@ h1 {
     align-items: center;
 }
 
-.writings  .writings-header {
+#writings  .writings-header {
     color: #FFFFFF;
     text-align: left;
     width: 70%;
 }
 
-.writings .writings-header h1 {
+#writings .writings-header h1 {
     color: #FFFFFF;
     text-align: left;
 }
@@ -376,7 +379,7 @@ h1 {
     line-height: 1.5;
 }
 
-.quote {
+#quote {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -439,9 +442,8 @@ h1 {
 .race-hero {
     display: flex;
     flex-direction: row;
+    flex-basis: auto;
     justify-content: center;
-    background-color: #141D4F;
-    max-width: 960px;
 }
 
 .race-hero .title {
@@ -454,11 +456,11 @@ h1 {
 }
 
 .map {
-    height: 320px;
+    max-height: 320px;
 }
 
 .logo {
-    height: 80px;
+    max-height: 80px;
 }
 
 .stats {
@@ -468,8 +470,8 @@ h1 {
     align-items: center;
     background-color: #FFFFFF;
     border-radius: 10px;
-    margin: 40px;
-    max-width: 960px;
+    margin: 40px auto;
+    max-width: 800px;
 }
 
 .stats-label {
@@ -504,9 +506,8 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 120px;
-    margin-right: 120px;
-    max-width: 960px;
+    margin: auto;
+    max-width: 800px;
 }
 
 .description h2 {
@@ -532,13 +533,11 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     gap: 20px;
 }
 
-.photo-row img {    
-    height: 20%;
-    object-fit: cover;
+.photo-row img {
+    max-height: 100%;
 }
 
 .aid-stations {
@@ -549,7 +548,6 @@ h1 {
 .race-table {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 3fr;
-    max-width: 960px;
 }
 
 .race-table .table-header {
@@ -563,6 +561,78 @@ h1 {
 
 .race-table > div {
     text-align: left;
+}
+
+.pacers-and-crew {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.pacers-and-crew .pacers{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: left;
+    width: 50%;
+}
+
+.pacers-and-crew .crew{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: left;
+    width: 50%;
+}
+
+.pacers-and-crew .stats-label {
+    padding-bottom: 20px;
+}
+
+.pacers-and-crew p {
+    color: #FFFFFF;
+    line-height: 0px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #141D4F;
+}
+
+.nav-logo {
+    height: 32px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+}
+ 
+.nav-links li a{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: #D3F355;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
 }
 
 
