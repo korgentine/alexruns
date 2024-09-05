@@ -119,7 +119,8 @@ h1 {
     text-align: center;
     letter-spacing: 1px;
     line-height: 1.5;
-    max-width: 960px;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 .large-subheader .highlight {
@@ -295,15 +296,11 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 100px;
     padding: 16px;
     margin-top: 40px;
     text-decoration: none;
     text-transform: uppercase;
     color: #D4414F;
-    width: 120px;
-    justify-content: center;
-    align-items: center;
 }
 
 .icon {
@@ -442,25 +439,33 @@ h1 {
 .race-hero {
     display: flex;
     flex-direction: row;
-    flex-basis: auto;
     justify-content: center;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    
 }
 
 .race-hero .title {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .race-hero h2{
-    color: #D3F355
+    color: #D3F355;
 }
 
 .map {
-    max-height: 320px;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
 }
 
 .logo {
-    max-height: 80px;
+    width: 100%;
+    height: auto;
 }
 
 .stats {
@@ -470,8 +475,8 @@ h1 {
     align-items: center;
     background-color: #FFFFFF;
     border-radius: 10px;
+    max-width: 600px;
     margin: 40px auto;
-    max-width: 800px;
 }
 
 .stats-label {
@@ -527,22 +532,29 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    width: 100%;
 }
 
 .photo-row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    max-width: 1200px;
 }
 
 .photo-row img {
-    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .aid-stations {
     padding-left: 40px;
     padding-right: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .race-table {
@@ -726,12 +738,26 @@ h1 {
     .image-about img {
         margin-top: -30px;
         justify-content: center;
+    }    
+
+    .stats {
+        display: flex;
+        flex-direction: column;        
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        margin-left: 8%;
+        margin-right: 8%;
+        padding-left: 0px;
+        padding-right: 0px;
     }
-    
-    .writings  .writings-header {
-        color: #FFFFFF;
-        text-align: left;
-        width: 100%;
+
+    .stats-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        padding: 8px;
     }
 
     .race-table {
@@ -761,4 +787,13 @@ h1 {
         content: "Aid Station: ";
         font-weight: bold;
       }
+
+      .race-hero {
+        flex-direction: column;
+    }
+
+    .race-hero .title {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
 }
