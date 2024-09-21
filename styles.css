@@ -36,14 +36,6 @@ h1 {
     padding: 10px 0;
 }
 
-.marquee-two {
-    width: 100%;
-    overflow: hidden;
-    background: #D3F355;
-    padding: 10px 0;
-    z-index: 2;
-    margin-bottom: 30px;
-}
 
 .marquee-content {
     display: flex;
@@ -353,10 +345,10 @@ h1 {
     position: relative;
     background-color: #EA5F38;
     padding: 40px;
-    padding-bottom: 100px;
     padding-left: 10%;
     justify-content: center;
     align-items: center;
+    margin: 0px;
 }
 
 #writings  .writings-header {
@@ -415,19 +407,16 @@ h1 {
     flex-direction: column;
     position: relative;
     z-index: 1;
-    width: 100%;
-    height: 80vh;   
-    display: flex;
-    justify-content: center;
+    width: 100%;  
     align-items: center;
-    margin-top: -120px;
+    margin: 0px;
 }
 
 
 .quote-overlay {
     position: absolute;
     width: 100%;
-    height: 80%;   
+    height: 100%;   
     background: rgba(0, 0, 47, 0.4);
     z-index: 0;
 }
@@ -435,7 +424,7 @@ h1 {
 .quote-image {
     position: absolute;
     width: 100%;
-    height: 80%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
     z-index: 0;
@@ -692,6 +681,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     background-color: #D4414F;
+    min-height: 700px;
 }
 
 .hokas-background {
@@ -714,6 +704,7 @@ h1 {
     align-items: center;
     justify-content: center;
     z-index: 2;
+    max-width: 700px;
 }
 
 .hoka-logo {
@@ -743,7 +734,8 @@ h1 {
 .hoka-counter{
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
+    position: absolute;
+    top: 240px;
     background-color: #1E2749;
     width: 280px;
     align-items: center;
@@ -796,6 +788,48 @@ h1 {
     transform: rotate(15deg);
     border: 3px solid #1E2749;
     box-shadow: 5px 5px 0 #1E2749;
+}
+
+.marquee-two {
+    position: absolute;
+    top: 620px;
+    width: 100%;
+    overflow: hidden;
+    background: #D3F355;
+    padding: 10px 0;
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.other-sponsors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #242222;
+    padding: 80px;
+}
+
+.other-sponsors h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    color: #656565;
+    letter-spacing: 0.05em;
+    text-align: center;
+
+}
+
+.sponsors {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+}
+
+.sponsors .sponsor-logo {
+    max-height: 100px;
 }
 
 
